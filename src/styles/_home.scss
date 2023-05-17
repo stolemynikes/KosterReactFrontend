@@ -1,0 +1,41 @@
+.HomeContainer {
+    display: flex;
+    flex-direction: column;  
+}
+
+.StyledImg {
+    font-family: 'League Spartan',sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 10vh;
+    background: fff;
+}
+
+.HomeText {
+    margin: 5% 10% 5% 10%;
+    font-family: 'League Spartan',sans-serif;
+  
+  h1 {
+    font-size: 4rem;
+    color: #041517;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 450px) {
+     
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 20px;
+    }
+}
+}

@@ -1,0 +1,15 @@
+.BierkaartContainer {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-right: 10%;
+    margin-left: 10%;
+    column-gap: 10rem;
+
+    @media (max-width: 1250px) {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}

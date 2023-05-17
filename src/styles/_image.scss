@@ -1,0 +1,47 @@
+.ImageContainer {
+    position: relative;
+width: 100vw;
+height: 70vh;
+background: white;
+  img {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    object-fit: cover;
+  }
+  img.active {
+    opacity: 1;
+    transition: .3s ease-in-out;
+  }
+  div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 20;
+
+    p {
+      color: #fff;
+      font-size: 22px;
+      letter-spacing: 4px;
+      font-style: italic;
+      font-weight: normal;
+
+      @media (max-width: 450px) {
+        font-size: 4vw;
+        font-weight: bold;
+  }
+
+    }
+  }
+}
