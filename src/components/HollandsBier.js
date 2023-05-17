@@ -8,7 +8,7 @@ import '../styles/_bier.scss'
 
 export default function HollandsBier() {
 
-    const {loading, error, data} = useFetch('http://admin.bierbrasseriekoster.nl/api/hollands?populate[HollandsBier][populate]=HollandsBierInfo')
+    const {loading, error, data} = useFetch('https://admin.bierbrasseriekoster.nl/api/hollands?populate[HollandsBier][populate]=HollandsBierInfo')
 
     if(loading) return <p>Loading...</p>
     if(error) return <p> Error </p>

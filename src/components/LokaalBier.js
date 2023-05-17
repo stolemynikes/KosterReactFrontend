@@ -8,7 +8,7 @@ import '../styles/_bier.scss'
 
 export default function LokaalBier() {
 
-    const {loading, error, data} = useFetch('http://admin.bierbrasseriekoster.nl/api/lokaals?populate[LokaalBier][populate]=LokaalBierInfo')
+    const {loading, error, data} = useFetch('https://admin.bierbrasseriekoster.nl/api/lokaals?populate[LokaalBier][populate]=LokaalBierInfo')
 
     if(loading) return <p>Loading...</p>
     if(error) return <p> Error </p>

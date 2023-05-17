@@ -8,7 +8,7 @@ import '../styles/_bier.scss'
 
 export default function TapBier() {
 
-    const {loading, error, data} = useFetch('http://admin.bierbrasseriekoster.nl/api/taps?populate[TapBier][populate]=TapBierInfo')
+    const {loading, error, data} = useFetch('https://admin.bierbrasseriekoster.nl/api/taps?populate[TapBier][populate]=TapBierInfo')
 
     if(loading) return <p>Loading...</p>
     if(error) return <p> Error </p>
